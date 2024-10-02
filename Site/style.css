@@ -1,0 +1,128 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc */
+    color: #000000; /* Texte noir pour une meilleure lisibilité */
+}
+
+/* Header */
+header {
+    background: #000000; /* Fond noir */
+    color: white; /* Texte en blanc */
+    padding: 20px 0;
+}
+
+/* Conteneur pour le header */
+.header-container {
+    display: flex; /* Utilise flexbox pour aligner le logo et la navigation */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: space-between; /* Espace entre le logo et la navigation */
+    padding: 20px; /* Espacement autour */
+}
+
+/* Style pour le logo */
+.logo {
+    width: 150px; /* Ajuste la largeur du logo comme souhaité */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+/* Navigation */
+nav {
+    flex-grow: 1; /* Permet à la navigation de prendre l'espace disponible */
+    text-align: center; /* Centre le texte de la navigation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+nav ul li {
+    display: inline; /* Affiche les éléments de la liste horizontalement */
+    margin-right: 15px; /* Espace entre les boutons */
+}
+
+nav ul li a {
+    background-color: #ffffff; /* Fond blanc pour les boutons */
+    color: #000000; /* Texte noir */
+    padding: 10px 20px; /* Espace autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour les effets de survol */
+}
+
+nav ul li a:hover {
+    background-color: #000000; /* Fond noir au survol */
+    color: #ffffff; /* Texte blanc au survol */
+}
+
+/* Sections */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #000; /* Bordure noire */
+    background-color: #f0f0f0; /* Fond gris clair pour les sections */
+    border-radius: 5px;
+}
+
+h1, h2 {
+    color: #000000; /* Couleur des titres en noir */
+    text-align: center; /* Centre le texte */
+    font-weight: bold; /* Gras */
+    font-style: italic; /* Italique */
+    text-decoration: underline; /* Souligne le texte */
+    margin-bottom: 20px; /* Espace en bas du titre */
+}
+
+/* Style pour les sections avec des images */
+.photo-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.photo-row img {
+    width: 30%; /* Chaque image occupe environ 30% de la largeur */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet de noir et blanc pour les photos en noir et blanc */
+#photos-noir-blanc img {
+    filter: grayscale(100%); /* Applique l'effet noir et blanc */
+    transition: filter 0.3s ease;
+}
+
+#photos-noir-blanc img:hover {
+    filter: grayscale(50%); /* Réduit légèrement l'effet au survol */
+}
+
+/* Section des guitares en couleur */
+#guitares-couleur img {
+    transition: transform 0.3s ease;
+}
+
+#guitares-couleur img:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+/* Footer */
+footer {
+    background: #000000; /* Fond noir */
+    color: white; /* Texte en blanc */
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
